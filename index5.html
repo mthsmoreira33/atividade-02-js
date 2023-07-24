@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const peso = prompt("Digite seu peso em kgs: "),
+        altura = prompt("Digite sua altura em cm:"),
+        imc = peso / (altura**2);
+
+        if (imc < 18.5) {
+            alert("Você está abaixo da faixa de peso ideal");
+        } else if (imc > 24.99) {
+            alert("Você está acima da faixa de peso ideal");
+        } else {
+            alert("Você está dentro da faixa de peso ideal");
+        }
+    </script>
+</body>
+</html>

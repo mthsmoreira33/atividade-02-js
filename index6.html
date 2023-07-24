@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num1 = prompt("Digite um número: ");
+        const num2 = prompt("Digite outro número: ");
+        const operacao = prompt("Digite a operação \n + (soma) \n - (subtração) \n x (soma) \n : (divisão)");
+
+        switch (operacao) {
+            case "+":
+                alert(`${num1} + ${num2} = ${+num1 + +num2}`);
+                break;
+
+            case "-":
+                alert(`${num1} - ${num2} = ${+num1 - +num2}`);
+                break;
+
+            case "x":
+                alert(`${num1} x ${num2} = ${+num1 * +num2}`);
+                break;
+
+            case ":":
+                alert(`${num1} : ${num2} = ${+num1 / +num2}`);
+                break;
+
+            default:
+                alert("Operação inválida!")
+                break;
+        }
+    </script>
+</body>
+</html>
